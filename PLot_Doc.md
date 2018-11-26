@@ -1,0 +1,57 @@
+---
+title: "Plot Doc"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+
+```r
+library(data.table)
+dat <- fread('https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customSingleStationReport/hourly/482:MT:SNTL%7Cid=%22%22%7Cname/-167,0/WTEQ::value,SNWD::value,PREC::value,TOBS::value')
+save(dat, file = paste(Sys.Date(), ".csv"))
+plot(dat$`Precipitation Accumulation (in)`, 
+     type = "p", 
+     pch = 8, 
+     main = "Let it Snow!", 
+     xlab = "Hours", 
+     cex = 0.7, 
+     col = "steelblue1", 
+     ylab = "Precipitation Accumulation (in)")
+```
+
+![](PLot_Doc_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+This document needs another plot. 
+
+
+Great! Lets add another plot. 
+
+
+```r
+plot(dat$`Air Temperature Observed (degF)`, 
+     type = "l", 
+     main = "Winter is Coming",
+     sub = "Brrrr",
+     col = "steelblue2",
+     xlab = "Hours", 
+     ylab = "Air Temp (degF)",
+     cex.main = 2,
+     cex.sub = 1.5)
+```
+
+![](PLot_Doc_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+
+Wow. These plots are bad. I still don't get the point. Maybe a third plot will help. 
+
+
+```r
+plot(dat$`Snow Depth (in)` , 
+     type = "l", 
+     xlab = "Hours",
+     ylab = "Snow Water Equivalent (in)",
+     main = "Dreaming of a White Christmas",
+     col = "snow4")
+```
+
+![](PLot_Doc_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+
