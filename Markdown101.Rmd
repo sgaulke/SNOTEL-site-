@@ -2,15 +2,6 @@
 title: "Markdown 102"
 output: html_document
 ---
----
-title: "Markdown 101"
-author: "Sarah"
-date: "November 20, 2018"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
----
 
 #Introduction 
 R Markdown creates Word, HTML and PDF files or presentations with embedded R code in R. You can write your document using syntax that translates to formatting in word documents and put your R outputs and code into professional looking presentations. You can do this with saved data or current data downloaded from the internet. The general idea behind the package is taking your word document and your R code and 'knitting' them together in an appealing way. 
