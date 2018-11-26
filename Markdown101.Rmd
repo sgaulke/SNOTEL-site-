@@ -1,0 +1,80 @@
+---
+title: "Markdown 102"
+output: html_document
+---
+---
+title: "Markdown 101"
+author: "Sarah"
+date: "November 20, 2018"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+#Introduction 
+R Markdown creates Word, HTML and PDF files or presentations with embedded R code in R. You can write your document using syntax that translates to formatting in word documents and put your R outputs and code into professional looking presentations. You can do this with saved data or current data downloaded from the internet. The general idea behind the package is taking your word document and your R code and 'knitting' them together in an appealing way. 
+
+This doesn't seem to be a version tracking package. My research suggested using GIT and GIThub to do that or SVN. 
+
+#Installation
+Install.packages("markdown", "data.table", "curl")
+More dependency packages may be necessary when you try to actually knit a document together. 
+
+To download the file as a PDF or HTML, you also need a TeX package, like LaTeX or something similar. I was unable to download the program onto my computer, but I can still create Word documents. 
+
+
+#Downloading Data
+To download information from online, I used the data.table package and the 'fread' function. The data that I pulled from online was in a CSV format webpage. I found this website to be helpful. For different web formats, you will probably need different code. 
+https://www.r-bloggers.com/getting-data-from-an-online-source/ 
+
+
+#Creating Code 
+To create an R Markdown document, go to File -> New File -> R markdown. This will create a specific R Markdown document with the Knit function and insert code functions on top. Before the document opens, you can name the document, choose the file type, and have the option to put the author. All this information will fill out the metadata of the file. You can also change it later by changing the header in the file. The new document also comes with some basic instructions already written and some example code chunks. 
+
+To start adding code in a document, you can hit the Insert button with the green C on the top bar and it will insert a R code chunk, You also have the option to insert chunks of code from other programs like Python. The code that you write will run and the final product will appear in the document that you knit. You can also specify other options that leave the code in the final document or change the output in some format. These options are detailed in the Reference Guide linked at the bottom of this document. 
+
+When you are finished with your document, you click on the Knit button next to the ball of blue yarn and it will open a new tab next to your console as it knits the document into the type you specified. 
+
+
+#Examples 
+This is an R Markdown document with a nice plot showing the precip accumulation at Flattop Mtn. SNOTEL site. In the code chunk below, I have downloaded the SNOTEL data from online and then created a plot for it. Once you download the data, you can save it on your computer somewhere.
+```{r precip, echo=FALSE, warning=FALSE}
+library(data.table)
+setwd("C:/Users/tgraves/Desktop/R")
+dat <- fread('https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customSingleStationReport/hourly/482:MT:SNTL%7Cid=%22%22%7Cname/-167,0/WTEQ::value,SNWD::value,PREC::value,TOBS::value')
+save(dat, file = paste(Sys.Date(), ".csv"))
+plot(dat$`Precipitation Accumulation (in)`, type = "l", xlab = "Hours", ylab = "Precipitation Accumulation (in)")
+```
+
+
+Here is another informative graph showing temperature. If you want to include your code in the document, you can set 'echo' to be TRUE. 
+```{r temp, echo = TRUE}
+plot(dat$`Air Temperature Observed (degF)`, type = "l", pch = 19, cex = .5, xlab = "Hours", ylab = "Air Temp (degF)")
+```
+
+
+
+#Data
+You can also put code output in the document. 
+```{r, data, echo = FALSE}
+summary(dat)
+```
+
+You can also put your data straight into the document. 
+```{r, echo = FALSE}
+dat
+```
+
+
+
+#Resources
+
+Here is a handy online book about R Markdown. 
+https://bookdown.org/yihui/rmarkdown/
+
+Here is the R Markdown Cheat Sheet. It has some nice examples of the embedded code and syntax to write in the document. 
+https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+
+Here is the R Markdown Reference Guide. It has more examples of the embedded code that you can utilize.
+https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
