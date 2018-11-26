@@ -6,7 +6,7 @@ output: html_document
 #Introduction 
 R Markdown creates Word, HTML and PDF files or presentations with embedded R code in R. You can write your document using syntax that translates to formatting in word documents and put your R outputs and code into professional looking presentations. You can do this with saved data or current data downloaded from the internet. The general idea behind the package is taking your word document and your R code and 'knitting' them together in an appealing way. 
 
-This doesn't seem to be a version tracking package. My research suggested using GIT and GIThub to do that or SVN. 
+This doesn't seem to be a version tracking package. My research suggested using GIT and GIThub to do that or SVN. So far GITHub seems to be working well. 
 
 #Installation
 Install.packages("markdown", "data.table", "curl")
