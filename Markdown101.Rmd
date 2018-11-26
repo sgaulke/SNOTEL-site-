@@ -1,6 +1,8 @@
 ---
 title: "Markdown 102"
-output: html_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 #Introduction 
@@ -32,7 +34,6 @@ When you are finished with your document, you click on the Knit button next to t
 This is an R Markdown document with a nice plot showing the precip accumulation at Flattop Mtn. SNOTEL site. In the code chunk below, I have downloaded the SNOTEL data from online and then created a plot for it. Once you download the data, you can save it on your computer somewhere.
 ```{r precip, echo=FALSE, warning=FALSE}
 library(data.table)
-setwd("C:/Users/tgraves/Desktop/R")
 dat <- fread('https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customSingleStationReport/hourly/482:MT:SNTL%7Cid=%22%22%7Cname/-167,0/WTEQ::value,SNWD::value,PREC::value,TOBS::value')
 save(dat, file = paste(Sys.Date(), ".csv"))
 plot(dat$`Precipitation Accumulation (in)`, type = "l", xlab = "Hours", ylab = "Precipitation Accumulation (in)")
