@@ -14,3 +14,18 @@ plot(dat$`Precipitation Accumulation (in)`,
      ylab = "Precipitation Accumulation (in)")
 ```
 This document needs another plot. 
+
+
+Great! Lets add another plot. 
+
+```{r}
+plot(dat$`Air Temperature Observed (degF)`, 
+     type = "p", 
+     pch = 8,
+     main = "Let it Snow",
+     cex = 0.7, 
+     col = "steelblue1",
+     xlab = "Hours", 
+     ylab = "Air Temp (degF)")
+```
+
