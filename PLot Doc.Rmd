@@ -44,12 +44,3 @@ plot(dat$`Snow Depth (in)` ,
      main = "Dreaming of a White Christmas",
      col = "snow4")
 ```
-
-https://guides.github.com/activities/hello-world/
-
-https://guides.github.com/introduction/flow/
-
-http://happygitwithr.com/push-pull-github.html
-
-https://support.rstudio.com/hc/en-us/articles/200532077?version=1.1.456&mode=desktop
-
