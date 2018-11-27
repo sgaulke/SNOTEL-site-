@@ -10,6 +10,7 @@ save(dat, file = paste(Sys.Date(), ".csv"))
 plot(dat$`Precipitation Accumulation (in)`, 
      type = "p", 
      pch = 8, 
+     col = "steelblue1", 
      main = "Let it Snow!", 
      xlab = "Hours", 
      cex = 0.7, 
