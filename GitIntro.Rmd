@@ -6,11 +6,11 @@ output: html_document
 ---
 
 #GIT and GitHub
-Git and GITHub are version tracking software that is stored online but can be pulled offline, edited, and then pushed back online to be stored. They are built and used for open source projects where people can be working on it across the world and in different versions. The idea is similar to Google Docs, but also tracks version history across the project. 
+Git and GitHub are version tracking software that is stored online but can be pulled offline, edited, and then pushed back online to be stored. They are built and used for open source projects where people can be working on it across the world and in different versions. The idea is similar to Google Docs, but also tracks version history across the project. 
 
 GitHub is the online database that stores the versions of your software. Its pretty user friendly. You can edit, comment, and see the history of each document online. 
 
-Git is the program downloaded onto your comupter. It looks like a terminal/command line type of deal that has its own language and commands to use. We can primarily just use it to link GitHub and RStudio.If you learn the langauge, you can do your own coding and program editing in Git, but its not necessary for useage with RStudio. There are also third-party platforms, like SourceTree, to use which might make using just Git easier.   
+Git is the program downloaded onto your computer. It looks like a terminal/command line type of deal that has its own language and commands to use. We can primarily just use it to link GitHub and RStudio.If you learn the language, you can do your own coding and program editing in Git, but its not necessary for usage with RStudio. There are also third-party platforms, like SourceTree, to use which might make using just Git easier.   
 
 #GitHub Language
 GitHub has specific names for its parts that are helpful to understand. 
@@ -18,12 +18,12 @@ Repository - the overall project title and folder online. It holds all the docum
 Master - The continuous final draft of the document that you like and are sure of the changes that are in it. 
 Branches - the version that you pull off the master and edit and change before pushing back onto the master
 Pull - when you download the document form the repository that you are working on and edit it
-Push - when you have commited your changes and want to save the edits back in the repository 
+Push - when you have committed your changes and want to save the edits back in the repository 
 Commit - when you make changes to a document, you must commit them to be saved 
 Local - these are files that are saved on your computer 
 Remote - these are files that are saved on GitHub
 
-This is a beginning GitHub exercise. I recomend reading it because it also defines some of the langauge, although the exercise is only somewhat helpful. 
+This is a beginning GitHub exercise. I recommend reading it because it also defines some of the language, although the exercise is only somewhat helpful. 
 https://guides.github.com/activities/hello-world/
 
 If you didn't read the above link, I would recommend watching this. For an overview of Git, its language, and its workflow, I found this video to be useful. If you understand the concept of Git and just want a good visual of the workflow process, skip to 4:30. 
@@ -33,7 +33,7 @@ For a better idea of the work flow set up, here is a webpage with the diagram of
 https://guides.github.com/introduction/flow/
 
 #Editing the Document
-For steps of the workflow, you pull the documents from your repository online, edit them in RStudio, save them, commit the saves, and then push them back online to your repository. This can all happen directly on to the master document or onto a branch that you have pulled off the master. Everytime you commit changes, you have to leave a commit message. If you are like me, you may be annoyed by this, but its actually really useful and is as helpful as you make it. Leaving more commit messages is helpful in the future if you are looking for a specific point. 
+For steps of the workflow, you pull the documents from your repository online, edit them in RStudio, save them, commit the saves, and then push them back online to your repository. This can all happen directly on to the master document or onto a branch that you have pulled off the master. Every time you commit changes, you have to leave a commit message. If you are like me, you may be annoyed by this, but its actually really useful and is as helpful as you make it. Leaving more commit messages is helpful in the future if you are looking for a specific point. 
 
 If you want to try something new or add some experimental code that you won't sure will work, you can branch off the master document and edit a copy of the master. You can save it on the branch, without ever effecting the master document. You can see if you are working on the branch of the master on the right hand side. 
 
@@ -43,18 +43,19 @@ I primarily followed this book for help with downloading and linking Git and RSt
 http://happygitwithr.com/
 
 1. Make a GitHub Account. https://github.com/
-2. Download Git- (Chapter 7 in book). Make sure to save it in someplace easily accessible because Windows will want to save it in a place thats hard to find. https://gitforwindows.org/ 
+2. Download Git- (Chapter 7 in book). Make sure to save it in someplace easily accessible because Windows will want to save it in a place that's hard to find. https://gitforwindows.org/ 
 3. Open Git Bash and Introduce Yourself (Chapter 8)
 4. Connect your Git and GitHub accounts (Chapter 10)
-5. Connect RStudio and Git (chapter 13) - For a visual guide, there are also several videos on Youtube. Here is a good one that shows how to connect and start a new project and repository on RStudio and GitHub.  https://www.youtube.com/watch?v=qcjpHFwCugE&t=312s
+5. Connect RStudio and Git (chapter 13) - For a visual guide, there are also several videos on YouTube. Here is a good one that shows how to connect and start a new project and repository on RStudio and GitHub.  https://www.youtube.com/watch?v=qcjpHFwCugE&t=312s
 
-After that you should be all set up. If something went wrong, you can google the errors and its usually pretty helpful. Any time you wan tot make a new repository or project, you can follow the video above. 
+After that you should be all set up. If something went wrong, you can Google the errors and its usually pretty helpful. Any time you want to make a new repository or project, you can follow the video above. 
 
 #GitHub
 On GitHub, you can see the commits and pushes from RStudio. They happen in real time, so you can refresh your page after pushing in RStudio, they should pop up. You can also see the history and past versions of a document, if you click on the document in the repository there should be a History button in the upper right of the document that lets you see each previous version and highlights the differences. It also lets you return to what the repository looked like at that time. 
 
 #Collaberation
-You can also use GitHub collaberatively. You can tag people in comments and edit the documents as well. If they want, they can also 'fork' your repository which pretty much copies the repository to their account. From there, they can edit and change their copy of the documents all they want without actually affecting your repository. If they solve a problem and want to make their copy of the repository the master, they can send a 'pull request' to merge their copy with the master. The owner of the original repository has to okay the pull request. 
+You can also use GitHub collaboratively. You can tag people in comments and edit the documents as well. If they want, they can also 'fork' your repository which pretty much copies the repository to their account. From there, they can edit and change their copy of the documents all they want without actually affecting your repository. If they solve a problem and want to make their copy of the repository the master, they can send a 'pull request' to merge their copy with the master. The owner of the original repository has to okay the pull request. 
 
 #RMarkdown and GitHub
-With RMarkdown you can make professional looking reports with R code embedded and R outputs in the report. You can save these reports and documents in GitHub. While you can save Word Documents, .Rmd files, and HTML files all on GitHub, you can't always view them in their 'knit' form. However, there is a mid-step in the knitting process that creates a .md file which is easily viewed in GitHub as a report. Chapter 19.3 of Happy Git with R decribes how to do this and the benefits. 
+With RMarkdown you can make professional looking reports with R code embedded and R outputs in the report. You can save these reports and documents in GitHub. While you can save Word Documents, .Rmd files, and HTML files all on GitHub, you can't always view them in their 'knit' form. However, there is a mid-step in the knitting process that creates a .md file which is easily viewed in GitHub as a report. It will also save all the plots as .png files in a folder in your repository. Chapter 19.3 of Happy Git with R describes how to do this and the benefits. 
+USGS also has a GitHub for RMarkdown templates, so you can knit into more formats. https://github.com/USGS-R/USGSmarkdowntemplates
