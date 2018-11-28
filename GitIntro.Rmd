@@ -8,20 +8,20 @@ output: html_document
 #GIT and GitHub
 Git and GitHub are version tracking software that is stored online but can be pulled offline, edited, and then pushed back online to be stored. They are built and used for open source projects where people can be working on it across the world and in different versions. The idea is similar to Google Docs, but also tracks version history across the project. 
 
-GitHub is the online database that stores the versions of your software. Its pretty user friendly. You can edit, comment, and see the history of each document online. 
+GitHub is the online database that stores the versions of your software. It is pretty user friendly. You can edit, comment, and see the history of each document online. 
 
 Git is the program downloaded onto your computer. It looks like a terminal/command line type of deal that has its own language and commands to use. We can primarily just use it to link GitHub and RStudio.If you learn the language, you can do your own coding and program editing in Git, but its not necessary for usage with RStudio. There are also third-party platforms, like SourceTree, to use which might make using just Git easier.   
 
 #GitHub Language
 GitHub has specific names for its parts that are helpful to understand. 
 Repository - the overall project title and folder online. It holds all the documents that you will work on inside it. 
-Master - The continuous final draft of the document that you like and are sure of the changes that are in it. 
-Branches - the version that you pull off the master and edit and change before pushing back onto the master
+Master - The continuous final draft of the document that you like and are sure of the changes that are in it. Branches - the version that you pull off the master and edit and change before pushing back onto the master
 Pull - when you download the document form the repository that you are working on and edit it
 Push - when you have committed your changes and want to save the edits back in the repository 
 Commit - when you make changes to a document, you must commit them to be saved 
 Local - these are files that are saved on your computer 
 Remote - these are files that are saved on GitHub
+Head - the latest commit that you have 
 
 This is a beginning GitHub exercise. I recommend reading it because it also defines some of the language, although the exercise is only somewhat helpful. 
 https://guides.github.com/activities/hello-world/
@@ -54,7 +54,7 @@ After that you should be all set up. If something went wrong, you can Google the
 On GitHub, you can see the commits and pushes from RStudio. They happen in real time, so you can refresh your page after pushing in RStudio, they should pop up. You can also see the history and past versions of a document, if you click on the document in the repository there should be a History button in the upper right of the document that lets you see each previous version and highlights the differences. It also lets you return to what the repository looked like at that time. 
 
 #Collaberation
-You can also use GitHub collaboratively. You can tag people in comments and edit the documents as well. If they want, they can also 'fork' your repository which pretty much copies the repository to their account. From there, they can edit and change their copy of the documents all they want without actually affecting your repository. If they solve a problem and want to make their copy of the repository the master, they can send a 'pull request' to merge their copy with the master. The owner of the original repository has to okay the pull request. 
+You can also use GitHub collaboratively. You can tag people in comments and edit the documents as well. If they want, they can also 'fork' your repository which essentially copies the repository to their account. From there, they can edit and change their copy of the documents all they want without actually affecting your repository. If they solve a problem and want to make their copy of the repository the master, they can send a 'pull request' to merge their copy with the master. The owner of the original repository has to okay the pull request. 
 
 #RMarkdown and GitHub
 With RMarkdown you can make professional looking reports with R code embedded and R outputs in the report. You can save these reports and documents in GitHub. While you can save Word Documents, .Rmd files, and HTML files all on GitHub, you can't always view them in their 'knit' form. However, there is a mid-step in the knitting process that creates a .md file which is easily viewed in GitHub as a report. It will also save all the plots as .png files in a folder in your repository. Chapter 19.3 of Happy Git with R describes how to do this and the benefits. 
