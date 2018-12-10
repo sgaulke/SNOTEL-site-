@@ -43,3 +43,4 @@ plot(dat$`Snow Depth (in)` ,
      main = "Dreaming of a White Christmas",
      col = "snow4")
 ```
+This third plot looks great! 
