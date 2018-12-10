@@ -1,5 +1,5 @@
 ---
-title: "Markdown 102"
+title: "Markdown 101"
 output:
   word_document: default
   html_document: default
@@ -35,7 +35,6 @@ This is an R Markdown document with a nice plot showing the precip accumulation 
 ```{r precip, echo=FALSE, warning=FALSE}
 library(data.table)
 dat <- fread('https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customSingleStationReport/hourly/482:MT:SNTL%7Cid=%22%22%7Cname/-167,0/WTEQ::value,SNWD::value,PREC::value,TOBS::value')
-save(dat, file = paste(Sys.Date(), ".csv"))
 plot(dat$`Precipitation Accumulation (in)`, type = "l", xlab = "Hours", ylab = "Precipitation Accumulation (in)")
 ```
 
