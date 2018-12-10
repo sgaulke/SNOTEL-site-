@@ -10,12 +10,13 @@ Git and GitHub are version tracking software that is stored online but can be pu
 
 GitHub is the online database that stores the versions of your software. It is pretty user friendly. You can edit, comment, and see the history of each document online. 
 
-Git is the program downloaded onto your computer. It looks like a terminal/command line type of deal that has its own language and commands to use. We can primarily just use it to link GitHub and RStudio.If you learn the language, you can do your own coding and program editing in Git, but its not necessary for usage with RStudio. There are also third-party platforms, like SourceTree, to use which might make using just Git easier.   
+Git is the program downloaded onto your computer. It looks like a terminal/command line type of deal that has its own language and commands to use. We can primarily just use it to link GitHub and RStudio.If you learn the language, you can do your own coding and program editing in Git, but its not necessary for usage with RStudio. There are also third-party platforms, like SourceTree, to use which might make using just Git easier. 
 
 #GitHub Language
 GitHub has specific names for its parts that are helpful to understand. 
 Repository - the overall project title and folder online. It holds all the documents that you will work on inside it. 
-Master - The continuous final draft of the document that you like and are sure of the changes that are in it. Branches - the version that you pull off the master and edit and change before pushing back onto the master
+Master - The continuous final draft of the document that you like and are sure of the changes that are in it. 
+Branches - the version that you pull off the master and edit and change before pushing back onto the master
 Pull - when you download the document form the repository that you are working on and edit it
 Push - when you have committed your changes and want to save the edits back in the repository 
 Commit - when you make changes to a document, you must commit them to be saved 
@@ -23,7 +24,7 @@ Local - these are files that are saved on your computer
 Remote - these are files that are saved on GitHub
 Head - the latest commit that you have 
 
-This is a beginning GitHub exercise. I recommend reading it because it also defines some of the language, although the exercise is only somewhat helpful. 
+This is a beginning GitHub exercise. I recommend reading it because it also defines some of the language, although the exercise is fairly basic and only somewhat helpful. 
 https://guides.github.com/activities/hello-world/
 
 If you didn't read the above link, I would recommend watching this. For an overview of Git, its language, and its workflow, I found this video to be useful. If you understand the concept of Git and just want a good visual of the workflow process, skip to 4:30. 
@@ -45,7 +46,7 @@ http://happygitwithr.com/
 1. Make a GitHub Account. https://github.com/
 2. Download Git- (Chapter 7 in book). Make sure to save it in someplace easily accessible because Windows will want to save it in a place that's hard to find. https://gitforwindows.org/ 
 3. Open Git Bash and Introduce Yourself (Chapter 8)
-4. Connect your Git and GitHub accounts (Chapter 10)
+4. Connect your Git and GitHub accounts (Chapter 10). Make sure to add your Git executable to your - global options- GIT/SVN 
 5. Connect RStudio and Git (chapter 13) - For a visual guide, there are also several videos on YouTube. Here is a good one that shows how to connect and start a new project and repository on RStudio and GitHub.  https://www.youtube.com/watch?v=qcjpHFwCugE&t=312s
 
 After that you should be all set up. If something went wrong, you can Google the errors and its usually pretty helpful. Any time you want to make a new repository or project, you can follow the video above. 
